@@ -1,0 +1,14 @@
+<%= form_for @changeset, Routes.topic_path(@conn, :create), fn f -> %>
+    <div class="form-group">
+        <%=
+            text_input f, :title, placeholder:  "Title", class: "form-control"
+        %>
+        <%= error_tag f, :title %>
+    </div>
+    <!-- <h2 style="color:red">
+     <%=
+        # @sum
+     %>
+    </h2> -->
+    <%= submit "Save Topic", class: "btn btn-primary" %>
+<%end%>

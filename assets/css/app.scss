@@ -1,0 +1,71 @@
+/* This file is for your main application css. */
+@import "./phoenix.css";
+
+.right > a {
+  padding: 2px 2px 2px 2px;
+  font-size: 15px;
+}
+
+.collection .collection-item {
+  padding: 10px 8px 8px 5px !important;
+  font-size: 20px;
+}
+/* Alerts and form errors */
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.alert-info {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  padding: 5px 5px 5px 5px;
+  margin-top: 5px;
+}
+
+.alert-warning {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+.alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+.alert p {
+  margin-bottom: 0;
+}
+.alert:empty {
+  display: none;
+}
+.invalid-feedback {
+  color: #a94442;
+  display: block;
+  margin: -1rem 0 2rem;
+}
+/* Default class for error_tag*/
+.help-block {
+  color: red;
+  text-transform: capitalize;
+  position: absolute;
+  top: 10px;
+  margin-bottom:10px;
+  padding: 0px;
+}
+.form-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+.btn-primary {
+  position: absolute;
+  margin-top: -30px;
+}
+
+.invalid-feedback {
+  color: red;
+  text-transform: capitalize;
+}
