@@ -50,7 +50,6 @@ defmodule DiscussWeb.TopicController do
     case Repo.update(changeset) do
       {:ok, _topic} ->
         conn
-        |> put_flash(:info, "Topic Updated!")
         |> redirect(to: Routes.topic_path(conn, :index))
       {:error, changeset} ->
         conn
@@ -79,5 +78,10 @@ defmodule DiscussWeb.TopicController do
       |> redirect(to: Routes.topic_path(conn, :index))
       |> halt()
     end
+  end
+
+  def show(conn, %{"id" => topic_id} = _params) do
+    topic = Repo.get!(Topic, topic_id)
+    render(conn, "show.html", topic: topic)
   end
 end
